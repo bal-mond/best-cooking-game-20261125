@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sizzle &amp; Serve — a 3-minute kitchen rush</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #2e1d12; }
+  body { display: flex; align-items: center; justify-content: center; min-height: 100vh; }
+  #wrap { width: min(1280px, 100vw); }
+  canvas { display: block; width: 100%; height: auto; image-rendering: auto; cursor: pointer; }
+  #hint { color: #c9a582; font: 13px Verdana, sans-serif; text-align: center; padding: 6px 0 10px; }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="1280" height="800"></canvas>
+  <div id="hint">Sizzle &amp; Serve — click the counter and stations, or use keys 1–6, C, G, Space, Enter. Staged shots: ?shot=start | ?shot=play | ?shot=end</div>
+</div>
+<script src="src/config.js"></script>
+<script src="src/audio.js"></script>
+<script src="src/state.js"></script>
+<script src="src/input.js"></script>
+<script src="src/render.js"></script>
+<script src="src/main.js"></script>
+</body>
+</html>
